@@ -1,13 +1,15 @@
 <template>
 	<div>
 		<h1>Committee Members</h1>
-		<div class="committee-members" style="max-width: 800px; margin: auto">
-			<div v-for="(member, index) in members" :key="index">
-				<v-avatar size="80">
-					<v-img :src="member.avatar" />
-				</v-avatar>
-				<h3>{{ member.name }}</h3>
-				<p>{{ member.jobTitle }}</p>
+		<div class="d-flex justify-center">
+			<div>
+				<div v-for="(member, index) in members" :key="index">
+					<v-avatar size="80">
+						<v-img :src="member.avatar" />
+					</v-avatar>
+					<h3>{{ member.name }}</h3>
+					<p>{{ member.jobTitle }}</p>
+				</div>
 			</div>
 		</div>
 	</div>
