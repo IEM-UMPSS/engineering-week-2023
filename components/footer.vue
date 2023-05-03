@@ -1,5 +1,5 @@
 <template>
-	<v-footer class="text-center">
+	<v-footer class="text-center bg-transparent">
 		<v-row>
 			<v-col cols="12">
 				<a href="https://github.com/Luetify/UTM-FD" target="_blank" class="text-teal">Source code</a> licensed <a
