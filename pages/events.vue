@@ -5,7 +5,7 @@
 				<h1>Events</h1>
 			</v-col>
 
-			<v-col cols="12">
+			<v-col cols="12" class="hidden-sm-and-down">
 				<v-timeline line-inset="12">
 					<v-timeline-item v-for="(event, i) in events" :key="i" width="100%">
 						<template v-slot:opposite>
@@ -39,6 +39,33 @@
 				</v-timeline>
 			</v-col>
 
+			<v-col cols="12" v-for="(event, i) in events" :key="i" class="hidden-md-and-up">
+				<v-card>
+					<v-img class="align-end text-white" height="200" :src="event.poster" cover>
+						<v-card-title>{{ event.title }}</v-card-title>
+					</v-img>
+
+					<v-card-subtitle class="pt-4">
+						<v-icon icon="mdi-map-marker"></v-icon>
+						{{ event.venue }}
+					</v-card-subtitle>
+
+					<v-card-text>
+						<div>Date: {{ event.date }}</div>
+						<div>Organizer: {{ event.organizer }}</div>
+					</v-card-text>
+
+					<v-card-actions>
+						<v-btn color="teal">
+							Join
+						</v-btn>
+
+						<v-btn color="teal">
+							Learn More
+						</v-btn>
+					</v-card-actions>
+				</v-card>
+			</v-col>
 		</v-row>
 	</v-container>
 </template>
