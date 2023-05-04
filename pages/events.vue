@@ -7,7 +7,7 @@
 
 			<v-col cols="12">
 				<v-timeline line-inset="12">
-					<v-timeline-item v-for="(event, i) in events" :key="i">
+					<v-timeline-item v-for="(event, i) in events" :key="i" width="100%">
 						<template v-slot:opposite>
 							{{ event.date }}
 						</template>
