@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "engineering-week",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -14,8 +14,6 @@
     "nuxt": "^3.4.3"
   },
   "dependencies": {
-    "@vercel/analytics": "^1.0.1",
-    "vite": "^4.3.5",
-    "vue": "^3.2.47"
+    "vite": "^4.3.4"
   }
 }

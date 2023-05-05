@@ -1,35 +1,17 @@
 <template>
-  <v-footer class="d-flex flex-column">
-    <div class="bg-teal d-flex w-100 align-center px-4">
-      <strong>Get connected with us on social networks!</strong>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        v-for="icon in icons"
-        :key="icon"
-        class="mx-4"
-        :icon="icon"
-        variant="plain"
-        size="small"
-      ></v-btn>
-    </div>
-
-    <div class="px-4 py-2 bg-black text-center w-100">
-      {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-    </div>
-  </v-footer>
+	<v-footer class="text-center bg-transparent">
+		<v-row>
+			<v-col cols="12">
+				<a href="https://github.com/Luetify/UTM-FD" target="_blank" class="text-teal">Source code</a> licensed <a
+					href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" class="text-teal">GNU GPLv3</a>. Website
+				content
+				licensed <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" class="text-teal">CC
+					BY-NC-SA
+					4.0</a>.
+				<div>
+					Copyright &COPY; {{ new Date().getFullYear() }} <strong>Engineering Week</strong>
+				</div>
+			</v-col>
+		</v-row>
+	</v-footer>
 </template>
-
-<script>
-  export default {
-    data: () => ({
-      icons: [
-        'mdi-facebook',
-        'mdi-twitter',
-        'mdi-linkedin',
-        'mdi-instagram',
-      ],
-    }),
-  }
-</script>

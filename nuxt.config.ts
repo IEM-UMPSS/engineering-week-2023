@@ -14,7 +14,7 @@ export default defineNuxtConfig({
       useIconCDN: true || false,
 
       /* vite-plugin-vuetify options */
-      styles: true || 'none' || 'expose' || 'sass' || { configFile: string },
+      styles: true || 'none' || 'expose' || 'sass',
       autoImport: true || false,
     }
   },
